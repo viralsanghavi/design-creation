@@ -5,6 +5,7 @@ import {
   NavigationMenuList,
 } from "../ui/navigation-menu";
 import { NAV_LINKS } from "@/lib/constants";
+import HorizontalLine from "../horizontal-line";
 
 const PageHeader = () => {
   const { push } = useRouter();
@@ -26,8 +27,8 @@ const PageHeader = () => {
             </NavigationMenuList>
           ))}
       </NavigationMenu>
-      <div className="text-5xl font-extrabold ml-32 mt-12">
-        Design Creation <hr className="mt-10 h-5 border-t-4" />
+      <div className=" w-[85%] mx-auto text-5xl font-semibold mt-12">
+        Design Creation <HorizontalLine />
       </div>
     </div>
   );
