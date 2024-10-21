@@ -54,7 +54,7 @@ export const TEAM = [
 export const NAV_LINKS = [
   {
     label: "Projects",
-    link: "/",
+    link: "/#",
   },
   {
     label: "About Us",

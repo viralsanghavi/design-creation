@@ -1,10 +1,14 @@
 import "@/styles/globals.css";
-import Home from ".";
+import MainLayout from "@/layout";
+import PageHeader from "@/components/navbar";
+import Footer from "@/components/footer";
 
-export default function App({Component, pageProps}) {
+export default function App({ Component, pageProps }) {
   return (
-    <Home>
+    <MainLayout>
+      <PageHeader />
       <Component {...pageProps} />
-    </Home>
+      <Footer />
+    </MainLayout>
   );
 }
