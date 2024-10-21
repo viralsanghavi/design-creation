@@ -1,10 +1,11 @@
 import HorizontalLine from "@/components/horizontal-line";
 import PageHeader from "@/components/page-header";
+import PageLayout from "@/layout/page";
 import React from "react";
 
 const CareersWrapper = () => {
   return (
-    <div className=" h-full flex flex-col justify-center items-start w-[85%] mx-auto">
+    <PageLayout>
       <PageHeader header="Careers" />
       {/* Section 1 */}
       <section className="text-gray-600 body-font">
@@ -393,7 +394,7 @@ const CareersWrapper = () => {
           </div>
         </div>
       </section>
-    </div>
+    </PageLayout>
   );
 };
 
