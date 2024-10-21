@@ -152,16 +152,16 @@ const AboutWrapper = () => {
             Delivering Enduring Value
           </p>
         </div>
-        <section class="text-gray-600 body-font">
-          <div class="container py-20 mx-auto">
-            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+        <section className="text-gray-600 body-font">
+          <div className="container py-20 mx-auto">
+            <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
               {VALUES.map(({title, description}) => (
-                <div class="p-4 md:w-1/3 flex">
-                  <div class="flex-grow" key={title}>
-                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
+                <div className="p-4 md:w-1/3 flex">
+                  <div className="flex-grow" key={title}>
+                    <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
                       {title}
                     </h2>
-                    <p class="leading-relaxed text-base">{description}</p>
+                    <p className="leading-relaxed text-base">{description}</p>
                   </div>
                 </div>
               ))}
@@ -169,13 +169,13 @@ const AboutWrapper = () => {
           </div>
         </section>
         <h5 className="text-2xl font-semibold">Clients & collaborators.</h5>
-        <div class="overflow-x-hidden">
-          <div class="py-12 animate-marquee whitespace-nowrap ">
-            <span class="text-4xl mx-4">Marquee Item 1</span>
-            <span class="text-4xl mx-4">Marquee Item 2</span>
-            <span class="text-4xl mx-4">Marquee Item 3</span>
-            <span class="text-4xl mx-4">Marquee Item 4</span>
-            <span class="text-4xl mx-4">Marquee Item 5</span>
+        <div className="overflow-x-hidden">
+          <div className="py-12 animate-marquee whitespace-nowrap ">
+            <span className="text-4xl mx-4">Marquee Item 1</span>
+            <span className="text-4xl mx-4">Marquee Item 2</span>
+            <span className="text-4xl mx-4">Marquee Item 3</span>
+            <span className="text-4xl mx-4">Marquee Item 4</span>
+            <span className="text-4xl mx-4">Marquee Item 5</span>
           </div>
         </div>
       </div>
