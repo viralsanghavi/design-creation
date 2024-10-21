@@ -1,9 +1,12 @@
-import {Button} from "@/components/ui/button";
+import Footer from "@/components/footer";
+import PageHeader from "@/components/navbar";
+import MainLayout from "@/layout";
 
 export default function Home() {
   return (
-    <div>
-      <Button>Click me</Button>
-    </div>
+    <MainLayout>
+      <PageHeader />
+      <Footer />
+    </MainLayout>
   );
 }
