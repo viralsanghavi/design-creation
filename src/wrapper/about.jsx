@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import PageLayout from "@/layout/page";
 import {
   ABOUT_ACCORDION_1,
   ABOUT_ACCORDION_2,
@@ -13,9 +14,8 @@ import {
 
 const AboutWrapper = () => {
   return (
-    <div>
-      <div className="w-full mt-20 overflow-hidden">
-        {/* <img src="/icons/5.webp"  /> */}
+    <PageLayout>
+      <div className="w-full mt-20 ">
         <iframe
           src="https://player.vimeo.com/video/877769356?background=1"
           frameborder="0"
@@ -32,7 +32,7 @@ const AboutWrapper = () => {
         <h1 className="text-8xl leading-[96px] border-b border-t py-6">
           Our Services
         </h1>
-        <div className="max-w-xl mt-20">
+        <div className="mt-20">
           <p className="text-base leading-6 font-normal">
             Our thoughtful consideration of the bigger picture - including how
             different services interact and complement one another demonstrates
@@ -78,17 +78,23 @@ const AboutWrapper = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#484a3c]">
+      <div className="">
         <div className="py-20">
           <>
-            <p title="Design Creation" className="text-white leading-snug" />
-            <p title="Framework" className="text-white leading-snug" />
+            <p
+              title="Design Creation"
+              className="leading-snug text-8xl font-medium"
+            >
+              Design Creation
+            </p>
+            <p title="Framework" className="leading-snug text-8xl font-medium">
+              Framework
+            </p>
           </>
         </div>
         {/* Framework definition */}
-
         <div className="py-20">
-          <div className="flex gap-8 justify-end text-xl text-white flex-wrap">
+          <div className="flex gap-8 justify-end text-xl flex-wrap">
             <div className="flex gap-8 flex-col flex-[0.35]">
               <p>
                 Our approach, driven by creative ideas and grounded in
@@ -125,7 +131,10 @@ const AboutWrapper = () => {
                 <img src={img} />
               ))}
             </div>
-            <img src="https://cdn.prod.website-files.com/65249822a54c89915817034b/653641efb55fc64b2d631992_archipelago-framework-line.webp" />
+            <img
+              src="https://cdn.prod.website-files.com/65249822a54c89915817034b/653641efb55fc64b2d631992_archipelago-framework-line.webp"
+              className="bg-neutral-200"
+            />
           </>
         </div>
       </div>
@@ -144,11 +153,11 @@ const AboutWrapper = () => {
           </p>
         </div>
         <section class="text-gray-600 body-font">
-          <div class="container px-5 py-20 mx-auto">
+          <div class="container py-20 mx-auto">
             <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
               {VALUES.map(({title, description}) => (
                 <div class="p-4 md:w-1/3 flex">
-                  <div class="flex-grow pl-6" key={title}>
+                  <div class="flex-grow" key={title}>
                     <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
                       {title}
                     </h2>
@@ -159,9 +168,18 @@ const AboutWrapper = () => {
             </div>
           </div>
         </section>
+        <h5 className="text-2xl font-semibold">Clients & collaborators.</h5>
+        <div class="overflow-x-hidden">
+          <div class="py-12 animate-marquee whitespace-nowrap ">
+            <span class="text-4xl mx-4">Marquee Item 1</span>
+            <span class="text-4xl mx-4">Marquee Item 2</span>
+            <span class="text-4xl mx-4">Marquee Item 3</span>
+            <span class="text-4xl mx-4">Marquee Item 4</span>
+            <span class="text-4xl mx-4">Marquee Item 5</span>
+          </div>
+        </div>
       </div>
-
-    </div>
+    </PageLayout>
   );
 };
 

@@ -218,22 +218,22 @@ export const VALUES = [
   {
     title: "Collaboration",
     description: (
-      <p>
-        <p>
+      <span>
+        <span>
           rchipelago embodies the spirit of collaboration - our namesake is
           derived from a collection of islands united to form a single
           continent. Our team thrives on unexpected outcomes triggered through
           meaningful engagement with communities, stakeholders, and experts in
           their field.
-        </p>
-        <p>
+        </span>
+        <span>
           Our collaborative workshops ensure rapid stakeholder engagement,
           delivering results-driven solutions to complex design challenges.
           Peter Edwards and Peter Richards, our urban design leaders, are
           Queensland's most esteemed Enquiry by Design (EBD) workshop
           facilitators.
-        </p>
-      </p>
+        </span>
+      </span>
     ),
   },
   {
