@@ -1,10 +1,12 @@
-import Layout from "@/components/layout";
-import {Button} from "@/components/ui/button";
+import Footer from "@/components/footer";
+import PageHeader from "@/components/navbar";
+import MainLayout from "@/layout";
 
 export default function Home() {
   return (
-    <div>
-      <Layout>Hi</Layout>
-    </div>
+    <MainLayout>
+      <PageHeader />
+      <Footer />
+    </MainLayout>
   );
 }
