@@ -3,7 +3,7 @@ import {motion} from "framer-motion";
 
 const MainLayout = ({children}) => {
   return (
-    <motion.div
+    <div
       initial={{y: 300, opacity: 0}}
       animate={{y: 0, opacity: 1}}
       exit={{y: 0, opacity: 0}}
@@ -11,7 +11,7 @@ const MainLayout = ({children}) => {
       className="w-full max-h-screen"
     >
       {children}
-    </motion.div>
+    </div>
   );
 };
 
