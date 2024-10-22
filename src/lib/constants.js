@@ -198,12 +198,12 @@ export const VALUES = [
   {
     title: "People",
     description:
-      "People are central to our ethos. We infuse people-centric design into our entire process, from idea inception to stakeholder engagement and the ultimate user experience. We value good communication, diversity, inclusivity and authentic approaches to collaboration between clients, stakeholders, and consultants, fostering shared knowledge to achieve outstanding project outcomes.",
+      "As we look to the future, we are proud to introduce the next generation of talent to Design Creation. My twin daughter, Isha Chandresh Lathia, and son, Ishan Chandresh Lathia, have joined the team as skilled architects, bringing fresh perspectives and creative energy. Together, we are expanding our services to include comprehensive architectural building design, offering our clients a seamless blend of interior and architectural expertise.",
   },
   {
-    title: "Cities",
+    title: "Our Philosophy",
     description:
-      "Our expanding Australian cities yield vibrant hubs for people to live, work and play. Archipelago approach each project with best-for-city outcomes in mind. Regardless of scale, each project should prioritise human experience and enduring value. We harness the interconnectedness of urban spaces, looking beyond the boundary of the site to leverage a two-way value exchange and project uplift.",
+      "We believe that every space tells a story. Whether it's a modern home, a commercial building, or a luxury villa, our approach is grounded in understanding the needs, desires, and aspirations of our clients. Our philosophy is simple: design should be timeless, functional, and deeply personal.",
   },
   {
     title: "Design",
@@ -242,3 +242,20 @@ export const VALUES = [
       "At Archipelago, we aren't afraid to challenge the status quo, ask the tough questions and explore unconventional hidden potential in every project. We believe good design is realised through rigorous investigation and collaboration, and we take great pride in our ability to unlock new and exciting opportunities through our curated design process.",
   },
 ];
+
+export const SERVICES = [
+  "Interior Design",
+  "Architectural Design",
+  "Turnkey Solutions",
+  "Luxury & Personalization",
+  "Custom Premium Furniture & Displays",
+];
+
+export const IMAGES = {
+  "Interior Design": "/cover-1.png",
+  "Architectural Design": "/cover-2.jpg",
+  "Turnkey Solutions":
+    "https://bobbymukherji.com/wp-content/uploads/2024/04/003-1-scaled.jpg",
+  "Luxury & Personalization": "/cover-2.jpg",
+  "Custom Premium Furniture & Displays": "/cover-1.png",
+};

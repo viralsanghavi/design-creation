@@ -8,12 +8,16 @@ import {NAV_LINKS} from "@/lib/constants";
 import HorizontalLine from "../horizontal-line";
 
 const PageHeader = () => {
-  const {push} = useRouter();
+  const {push, pathname} = useRouter();
   const handleNavigation = (link) => {
     push(link);
   };
   return (
-    <div className="w-full flex- justify-center items-start">
+    <div
+      className={`w-full flex- justify-center items-start ${
+        pathname === "/" ? "text-white" : "text-black"
+      }`}
+    >
       <NavigationMenu className="max-w-full flex justify-around items-center h-24">
         {NAV_LINKS &&
           NAV_LINKS?.map((item) => (
@@ -29,8 +33,8 @@ const PageHeader = () => {
       </NavigationMenu>
       <div className=" w-[85%] mx-auto text-5xl font-semibold mt-12">
         <img
-          src="/logo-black.svg"
-          className="h-60 w-60 scale-150 cursor-pointer"
+          src={pathname === "/" ? "/logo.svg" : "/logo-black.svg"}
+          className="h-60 w-60 scale-125 cursor-pointer"
           onClick={() => handleNavigation("/")}
         />
         <HorizontalLine />

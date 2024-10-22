@@ -5,7 +5,7 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-const Carousel = () => {
+const Carousel = ({src}) => {
   return (
     <Swiper
       pagination={{
@@ -19,7 +19,7 @@ const Carousel = () => {
       className="mySwiper"
     >
       <SwiperSlide className="w-full rounded-md overflow-hidden">
-        <img src="cover.png" className="cover w-full" />
+        <img src={src} className="cover w-full h-full" />
       </SwiperSlide>
     </Swiper>
   );

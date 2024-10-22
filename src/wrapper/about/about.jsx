@@ -24,24 +24,27 @@ const AboutWrapper = () => {
           className="w-full h-[720px]"
         />
         <p className="text-4xl font-normal leading-10 my-20 text-center mx-auto w-full max-w-3xl">
-          From concept to delivery, Archipelago offers holistic expertise in
-          architecture, urban design, landscape and strategic planning.
+          Comprehensive Design and Architectural Solutions
         </p>
       </div>
       <div>
         <h1 className="text-8xl leading-[96px] border-b border-t py-6">
-          Our Services
+          Our Story
         </h1>
         <div className="mt-20">
           <p className="text-base leading-6 font-normal">
-            Our thoughtful consideration of the bigger picture - including how
-            different services interact and complement one another demonstrates
-            our thorough understanding of industry requirements, regulations,
-            expectations and opportunities.
+            With over three decades of unwavering dedication and boundless
+            creativity, we've been crafting spaces that reflect our clients'
+            dreams and aspirations. Our journey has been enriched by the trust
+            and support of our clients, who have made our design dreams a
+            reality.
           </p>
           <p className="text-base leading-6 font-normal">
-            We believe architecture does not exist in isolation, so our services
-            and expertise don't either.
+            We are excited to introduce the next generation of innovation at our
+            company—my twin daughter and son. As skilled architects, they have
+            joined our team, allowing us to expand our services from interior
+            design to comprehensive architectural building design. Together, we
+            continue to shape environments that inspire and endure.
           </p>
         </div>
         <div className="flex gap-6 py-40">
@@ -57,7 +60,7 @@ const AboutWrapper = () => {
             </h3>
 
             {ABOUT_ACCORDION_1.map(({title, content}) => (
-              <Accordion type="single" collapsible>
+              <Accordion type="single" collapsible key={title}>
                 <AccordionItem value="item-1">
                   <AccordionTrigger>{title}</AccordionTrigger>
                   <AccordionContent>{content}</AccordionContent>
@@ -68,7 +71,7 @@ const AboutWrapper = () => {
               Supporting Services
             </h3>
             {ABOUT_ACCORDION_2.map(({title, content}) => (
-              <Accordion type="single" collapsible>
+              <Accordion type="single" collapsible key={title}>
                 <AccordionItem value="item-1">
                   <AccordionTrigger>{title}</AccordionTrigger>
                   <AccordionContent>{content}</AccordionContent>
@@ -97,17 +100,13 @@ const AboutWrapper = () => {
           <div className="flex gap-8 justify-end text-xl flex-wrap">
             <div className="flex gap-8 flex-col flex-[0.35]">
               <p>
-                Our approach, driven by creative ideas and grounded in
-                evidence-based research, unveils opportunities often unseen at a
-                project's inception. This methodology ensures we reach positive,
-                transformative outcomes.
-              </p>
-              <p>
-                Our portfolio of city-shaping master plans and extensive urban
-                projects showcases our ability to harness opportunities within
-                the context. We unlock each site's full potential, crafting
-                public spaces and respectful buildings that enhance the unique
-                character of the neighbourhoods we engage with.
+                At Design Creation, our story is one of passion, creativity, and
+                a commitment to excellence. Founded by Mr. Chandresh Lathia, a
+                visionary interior designer with over three decades of
+                experience, we have established ourselves as leaders in crafting
+                spaces that are not only functional but also truly inspiring.
+                Every space we create is a reflection of our clients' dreams and
+                personalities, infused with elegance, luxury, and innovation.
               </p>
             </div>
             <div className="flex gap-8 flex-col flex-[0.35]">
@@ -128,12 +127,12 @@ const AboutWrapper = () => {
           <>
             <div className="flex gap-8 justify-between w-full lg:px-16 pb-2 overflow-x-auto">
               {FRAMEWORK_IMAGES.map((img) => (
-                <img src={img} />
+                <img src={img} key={img} />
               ))}
             </div>
             <img
               src="https://cdn.prod.website-files.com/65249822a54c89915817034b/653641efb55fc64b2d631992_archipelago-framework-line.webp"
-              className="bg-neutral-200"
+              className="bg-neutral-400"
             />
           </>
         </div>
@@ -141,7 +140,7 @@ const AboutWrapper = () => {
       {/* Vision */}
       <div className="">
         <h1 className="text-8xl leading-[96px] border-b border-t py-6">
-          Our Framework
+          The Next Generation
         </h1>
         <div className="flex w-full flex-col items-center justify-center py-20">
           <img src="https://cdn.prod.website-files.com/65249822a54c89915817034b/6536524d0580816a6a399f95_archipelago_our-approach.svg" />

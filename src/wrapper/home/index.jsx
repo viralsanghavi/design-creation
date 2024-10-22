@@ -3,10 +3,11 @@ import Counter from "@/components/count";
 import ScrollText from "@/components/scroll-text";
 import {Button} from "@/components/ui/button";
 import PageLayout from "@/layout/page";
+import {IMAGES, SERVICES} from "@/lib/constants";
 import {useState} from "react";
 
 const HomeWrapper = () => {
-  const [active, setActive] = useState("Architecture");
+  const [active, setActive] = useState("Interior Design");
   return (
     <PageLayout>
       <section className="min-h-[200vh] w-full">
@@ -14,29 +15,18 @@ const HomeWrapper = () => {
       </section>
       <section className="w-full">
         <div className="flex justify-center items-center flex-col gap-12 py-12">
-          <h3 className="text-2xl font-normal">WHO WE ARE</h3>
           <h1 className="text-6xl font-normal">
-            A pluralistic, customer-centric design practice
+            Crafting Timeless Spaces, Elevating Luxury Living
           </h1>
-          <p className="text-lg font-light">
-            We thrive on challenges. We enjoy complexities. We welcome
-            diversity.
-          </p>
           <Button className="text-lg bg-neutral-400 font-normal p-8">
-            learn more about us
+            Let's Design Your Space
           </Button>
         </div>
         <div className="flex gap-16 my-20">
           <div className="flex-[0.25]">
-            <h3 className="text-xl font-normal my-4">Services</h3>
-            <div className="flex flex-col gap-4">
-              {[
-                "Architecture",
-                "Interior Design",
-                "Landscape Design",
-                "Lightning Design",
-                "Urban Planning",
-              ].map((arc) => (
+            <h3 className="text-xl font-normal mt-4 mb-8">Services</h3>
+            <div className="flex flex-col gap-12">
+              {SERVICES.map((arc) => (
                 <p
                   key={arc}
                   className={`text-4xl cursor-pointer ${
@@ -50,7 +40,7 @@ const HomeWrapper = () => {
             </div>
           </div>
           <div className="flex-[0.75] w-full">
-            <Carousel />
+            <Carousel src={IMAGES[active]} />
           </div>
         </div>
       </section>
@@ -60,22 +50,22 @@ const HomeWrapper = () => {
             title="Design Creation"
             className="leading-snug text-8xl font-medium"
           >
-            We're City
+            Comprehensive Design
           </p>
           <p
             title="Design Creation"
             className="leading-snug text-8xl font-medium"
           >
-            Making Design Leaders
+            and Architectural Solutions
           </p>
         </div>
         <p className="text-sm font-normal">
-          From health and knowledge precincts to club houses...
+          From residential to commercial, we design your dreams...
         </p>
-        <div className="grid grid-cols-2 gap-8 my-20">
+        <div className="grid place-items-center grid-cols-2 gap-8 my-20">
           <div>
             <div className="flex gap-8">
-              <p className="mt-8 text-4xl">Workshops More than</p>
+              <p className="mt-8 text-4xl">Projects</p>
               <img
                 src="https://cdn.prod.website-files.com/65249822a54c89915817034b/6527350e5ca90c6ad85788d9_archipelago-workshops.svg"
                 className="w-80"
@@ -87,9 +77,7 @@ const HomeWrapper = () => {
           </div>
           <div>
             <div className="flex gap-8">
-              <p className="mt-8 text-4xl">
-                Games Precincts, Venues + Overlay Plans
-              </p>
+              <p className="mt-8 text-4xl">Experience</p>
               <img
                 src="https://cdn.prod.website-files.com/65249822a54c89915817034b/654445a386ff33269150df5a_Games%20Precincts%20%2B%20Event%20Overlay%20v2.svg"
                 className="w-60"
@@ -100,10 +88,10 @@ const HomeWrapper = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-8 my-20">
+        <div className="grid grid-cols-2 gap-8 mt-20">
           <div>
             <div className="flex gap-8">
-              <p className="mt-8 text-4xl">Dwellings currently on our boards</p>
+              <p className="mt-8 text-4xl">Residential</p>
               <img
                 src="https://cdn.prod.website-files.com/65249822a54c89915817034b/654445a3aee534573fd421ba_Housing%20icon%20v2.svg"
                 className="w-80"
@@ -115,7 +103,7 @@ const HomeWrapper = () => {
           </div>
           <div>
             <div className="flex gap-8">
-              <p className="mt-8 text-4xl">City Shaping Master Planning</p>
+              <p className="mt-8 text-4xl">Commercial</p>
               <img
                 src="https://cdn.prod.website-files.com/65249822a54c89915817034b/6527350e22c77e92a4306f72_archipelago-city.svg"
                 className="w-60"
@@ -126,31 +114,22 @@ const HomeWrapper = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-8 my-20">
-          <div>
-            <div className="flex gap-8">
-              <p className="mt-8 text-4xl">People-oriented precincts</p>
-              <img
-                src="https://cdn.prod.website-files.com/65249822a54c89915817034b/654445a3d1ae4eeb76cf2103_People%20Precincts.svg"
-                className="w-60"
-              />
-            </div>
-            <div className="text-[194px]">
-              <Counter counter={40} className="flex w-32 gap-4"></Counter>
-            </div>
-          </div>
-          <div>
-            <div className="flex gap-8">
-              <p className="mt-8 text-4xl">Beautiful bridges</p>
-              <img
-                src="https://cdn.prod.website-files.com/65249822a54c89915817034b/654445a3deab64c75a67e76d_bridgeicon%20v2.svg"
-                className="w-80"
-              />
-            </div>
-            <div className="text-[194px]">
-              <Counter counter={20} className="flex w-32 gap-4"></Counter>
-            </div>
-          </div>
+      </section>
+      <section className="py-20">
+        <p>CLIENTS</p>
+        <div className="animate-marquee-right flex gap-16 items-center">
+          {[
+            "https://bobbymukherji.com/wp-content/uploads/2023/08/client_bharat_hotel.png",
+            "https://bobbymukherji.com/wp-content/uploads/2024/04/wyndhamGrand-1.jpg",
+            "https://bobbymukherji.com/wp-content/uploads/2023/08/client_bharat_hotel.png",
+            "https://bobbymukherji.com/wp-content/uploads/2024/04/wyndhamGrand-1.jpg",
+            "https://bobbymukherji.com/wp-content/uploads/2023/08/client_bharat_hotel.png",
+            "https://bobbymukherji.com/wp-content/uploads/2024/04/wyndhamGrand-1.jpg",
+            "https://bobbymukherji.com/wp-content/uploads/2023/08/client_bharat_hotel.png",
+            "https://bobbymukherji.com/wp-content/uploads/2024/04/wyndhamGrand-1.jpg",
+          ].map((src) => (
+            <img key={src} src={src} className="w-40 h-40 object-contain" />
+          ))}
         </div>
       </section>
     </PageLayout>

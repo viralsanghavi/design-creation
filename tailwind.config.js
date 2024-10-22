@@ -59,6 +59,9 @@ module.exports = {
           5: "hsl(var(--chart-5))",
         },
       },
+      backgroundImage: {
+        hero: "url('https://cdn.prod.website-files.com/65249822a54c89915817034b/65540f3105b0d57b256f81b0_Two%20Archipelago%20team%20members%20having%20a%20conversation%20at%20a%20table-p-1080.webp')",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -85,14 +88,12 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        animation: {
-          "marquee-right": "marquee-right 25s linear infinite",
-        },
-        keyframes: {
-          "marquee-right": {
-            "0%": {transform: "translateX(0%)"},
-            "100%": {transform: "translateX(-100%)"},
-          },
+        "marquee-right": "marquee-right 25s linear infinite",
+      },
+      keyframes: {
+        "marquee-right": {
+          "0%": {transform: "translateX(0%)"},
+          "100%": {transform: "translateX(-100%)"},
         },
       },
     },
