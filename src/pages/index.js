@@ -1,8 +1,5 @@
-import Footer from "@/components/footer";
-import PageHeader from "@/components/navbar";
-import MainLayout from "@/layout";
-import ProjectWrapper from "@/wrapper/projects";
+import HomeWrapper from "@/wrapper/home";
 
-export default function Home({ children }) {
-  return <ProjectWrapper />;
+export default function Home({children}) {
+  return <HomeWrapper />;
 }

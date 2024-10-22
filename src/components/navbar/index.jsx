@@ -1,14 +1,14 @@
-import { useRouter } from "next/router";
+import {useRouter} from "next/router";
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuList,
 } from "../ui/navigation-menu";
-import { NAV_LINKS } from "@/lib/constants";
+import {NAV_LINKS} from "@/lib/constants";
 import HorizontalLine from "../horizontal-line";
 
 const PageHeader = () => {
-  const { push } = useRouter();
+  const {push} = useRouter();
   const handleNavigation = (link) => {
     push(link);
   };
@@ -28,7 +28,12 @@ const PageHeader = () => {
           ))}
       </NavigationMenu>
       <div className=" w-[85%] mx-auto text-5xl font-semibold mt-12">
-        Design Creation <HorizontalLine />
+        <img
+          src="/logo-black.svg"
+          className="h-60 w-60 scale-150 cursor-pointer"
+          onClick={() => handleNavigation("/")}
+        />
+        <HorizontalLine />
       </div>
     </div>
   );
