@@ -53,6 +53,10 @@ export const TEAM = [
 
 export const NAV_LINKS = [
   {
+    label: "Home",
+    link: "/",
+  },
+  {
     label: "Projects",
     link: "/projects",
   },
@@ -61,12 +65,8 @@ export const NAV_LINKS = [
     link: "/about",
   },
   {
-    label: "Team",
-    link: "/teams",
-  },
-  {
-    label: "Careers",
-    link: "/careers",
+    label: "Awards",
+    link: "/awards",
   },
   {
     label: "Contact",

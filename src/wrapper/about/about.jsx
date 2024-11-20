@@ -20,7 +20,7 @@ const AboutWrapper = () => {
           src="https://player.vimeo.com/video/877769356?background=1"
           frameborder="0"
           allow="autoplay; fullscreen"
-          allowfullscreen=""
+          allowFullScreen=""
           className="w-full h-[720px]"
         />
         <p className="text-4xl font-normal leading-10 my-20 text-center mx-auto w-full max-w-3xl">

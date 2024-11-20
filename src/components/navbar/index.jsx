@@ -18,7 +18,12 @@ const PageHeader = () => {
         pathname === "/" ? "text-white" : "text-black"
       }`}
     >
-      <NavigationMenu className="max-w-full flex justify-around items-center h-24">
+      <NavigationMenu className="max-w-full flex justify-around items-end">
+        <img
+          src={pathname === "/" ? "/logo.png" : "/logo-black.svg"}
+          className="h-full w-32 scale-[1.1] object-contain cursor-pointer"
+          onClick={() => handleNavigation("/")}
+        />
         {NAV_LINKS &&
           NAV_LINKS?.map((item) => (
             <NavigationMenuList key={item?.label}>
@@ -31,12 +36,7 @@ const PageHeader = () => {
             </NavigationMenuList>
           ))}
       </NavigationMenu>
-      <div className=" w-[85%] mx-auto text-5xl font-semibold mt-12">
-        <img
-          src={pathname === "/" ? "/logo.svg" : "/logo-black.svg"}
-          className="h-60 w-60 scale-125 cursor-pointer"
-          onClick={() => handleNavigation("/")}
-        />
+      <div className="mx-auto text-5xl font-semibold">
         <HorizontalLine />
       </div>
     </div>

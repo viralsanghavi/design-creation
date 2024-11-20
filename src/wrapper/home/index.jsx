@@ -23,7 +23,7 @@ const HomeWrapper = () => {
           </Button>
         </div>
         <div className="flex gap-16 my-20">
-          <div className="flex-[0.25]">
+          <div className="flex-[0.35]">
             <h3 className="text-xl font-normal mt-4 mb-8">Services</h3>
             <div className="flex flex-col gap-12">
               {SERVICES.map((arc) => (
@@ -39,7 +39,7 @@ const HomeWrapper = () => {
               ))}
             </div>
           </div>
-          <div className="flex-[0.75] w-full">
+          <div className="flex-[0.65] w-full">
             <Carousel src={IMAGES[active]} />
           </div>
         </div>
@@ -71,8 +71,8 @@ const HomeWrapper = () => {
                 className="w-80"
               />
             </div>
-            <div className="text-[194px]">
-              <Counter counter={100} className="flex w-32 gap-4"></Counter>
+            <div className="text-[120px]">
+              <Counter counter={500} className="flex w-32 gap-4"></Counter>
             </div>
           </div>
           <div>
@@ -83,41 +83,41 @@ const HomeWrapper = () => {
                 className="w-60"
               />
             </div>
-            <div className="text-[194px]">
-              <Counter counter={12} className="flex w-32 gap-4"></Counter>
+            <div className="text-[120px]">
+              <Counter counter={21} className="flex w-32 gap-4"></Counter>
             </div>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-8 mt-20">
           <div>
             <div className="flex gap-8">
-              <p className="mt-8 text-4xl">Residential</p>
+              <p className="mt-8 text-4xl">Cities</p>
               <img
                 src="https://cdn.prod.website-files.com/65249822a54c89915817034b/654445a3aee534573fd421ba_Housing%20icon%20v2.svg"
                 className="w-80"
               />
             </div>
-            <div className="text-[194px]">
-              <Counter counter={1250} className="flex w-32 gap-4"></Counter>
+            <div className="text-[120px]">
+              <Counter counter={150} className="flex w-32 gap-4"></Counter>
             </div>
           </div>
           <div>
             <div className="flex gap-8">
-              <p className="mt-8 text-4xl">Commercial</p>
+              <p className="mt-8 text-4xl">Clientele</p>
               <img
                 src="https://cdn.prod.website-files.com/65249822a54c89915817034b/6527350e22c77e92a4306f72_archipelago-city.svg"
                 className="w-60"
               />
             </div>
-            <div className="text-[194px]">
-              <Counter counter={100} className="flex w-32 gap-4"></Counter>
+            <div className="text-[120px]">
+              <Counter counter={500} className="flex w-32 gap-4"></Counter>
             </div>
           </div>
         </div>
       </section>
       <section className="py-20">
-        <p>CLIENTS</p>
-        <div className="animate-marquee-right flex gap-16 items-center">
+        <h5 className="leading-snug text-8xl font-medium">CLIENTS</h5>
+        <div className="animate-marquee-right flex gap-16 items-center max-w-screen-lg">
           {[
             "https://bobbymukherji.com/wp-content/uploads/2023/08/client_bharat_hotel.png",
             "https://bobbymukherji.com/wp-content/uploads/2024/04/wyndhamGrand-1.jpg",

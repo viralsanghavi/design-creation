@@ -13,7 +13,7 @@ const MainLayout = ({children}) => {
       {router.pathname === "/" && (
         <img
           src="cover-2.jpg"
-          className="absolute h-scree w-scree top-0 left-0"
+          className="absolute h-scree w-scree top-0 left-0 brightness-50"
         />
       )}
       <div className="w-full">{children}</div>
