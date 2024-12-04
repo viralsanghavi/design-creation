@@ -1,4 +1,5 @@
 import Counter from "@/components/count";
+import Marquee from "@/components/marquee";
 import ScrollText from "@/components/scroll-text";
 import Services from "@/components/services";
 import {Button} from "@/components/ui/button";
@@ -21,8 +22,8 @@ const HomeWrapper = () => {
         </div>
         <Services />
       </section>
-      <section className="py-20">
-        <div className="mb-12">
+      <section className="py-20 w-full">
+        <div className="mb-8">
           <p
             title="Design Creation"
             className="leading-snug text-8xl font-medium"
@@ -39,7 +40,7 @@ const HomeWrapper = () => {
         <p className="text-sm font-normal">
           From residential to commercial, we design your dreams...
         </p>
-        <div className="grid place-items-center grid-cols-2 gap-8 my-20">
+        <div className="grid place-items-center w-full grid-cols-2 gap-8 my-20">
           <div>
             <div className="flex gap-8">
               <p className="mt-8 text-4xl">Projects</p>
@@ -48,7 +49,7 @@ const HomeWrapper = () => {
                 className="w-80"
               />
             </div>
-            <div className="text-[120px]">
+            <div className="text-[80px]">
               <Counter counter={500} className="flex w-32 gap-4"></Counter>
             </div>
           </div>
@@ -60,12 +61,12 @@ const HomeWrapper = () => {
                 className="w-60"
               />
             </div>
-            <div className="text-[120px]">
+            <div className="text-[80px]">
               <Counter counter={21} className="flex w-32 gap-4"></Counter>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-8 mt-20">
+        <div className="grid grid-cols-2 w-full place-items-center gap-8 mt-20">
           <div>
             <div className="flex gap-8">
               <p className="mt-8 text-4xl">Cities</p>
@@ -74,7 +75,7 @@ const HomeWrapper = () => {
                 className="w-80"
               />
             </div>
-            <div className="text-[120px]">
+            <div className="text-[80px]">
               <Counter counter={150} className="flex w-32 gap-4"></Counter>
             </div>
           </div>
@@ -86,28 +87,30 @@ const HomeWrapper = () => {
                 className="w-60"
               />
             </div>
-            <div className="text-[120px]">
+            <div className="text-[80px]">
               <Counter counter={500} className="flex w-32 gap-4"></Counter>
             </div>
           </div>
         </div>
       </section>
-      <section className="py-20">
+      <section className="py-20 overflow-hidden w-full">
         <h5 className="leading-snug text-8xl font-medium">CLIENTS</h5>
-        <div className="animate-marquee-right flex gap-16 items-center max-w-screen-lg">
-          {[
-            "https://bobbymukherji.com/wp-content/uploads/2023/08/client_bharat_hotel.png",
-            "https://bobbymukherji.com/wp-content/uploads/2024/04/wyndhamGrand-1.jpg",
-            "https://bobbymukherji.com/wp-content/uploads/2023/08/client_bharat_hotel.png",
-            "https://bobbymukherji.com/wp-content/uploads/2024/04/wyndhamGrand-1.jpg",
-            "https://bobbymukherji.com/wp-content/uploads/2023/08/client_bharat_hotel.png",
-            "https://bobbymukherji.com/wp-content/uploads/2024/04/wyndhamGrand-1.jpg",
-            "https://bobbymukherji.com/wp-content/uploads/2023/08/client_bharat_hotel.png",
-            "https://bobbymukherji.com/wp-content/uploads/2024/04/wyndhamGrand-1.jpg",
-          ].map((src) => (
-            <img key={src} src={src} className="w-40 h-40 object-contain" />
-          ))}
-        </div>
+        <Marquee>
+          <div className="animate-marquee-right flex gap-16 items-center overflow-hidden first:ml-10 last:ml-10">
+            {[
+              "https://bobbymukherji.com/wp-content/uploads/2023/08/client_bharat_hotel.png",
+              "https://bobbymukherji.com/wp-content/uploads/2024/04/wyndhamGrand-1.jpg",
+              "https://bobbymukherji.com/wp-content/uploads/2023/08/client_bharat_hotel.png",
+              "https://bobbymukherji.com/wp-content/uploads/2024/04/wyndhamGrand-1.jpg",
+              "https://bobbymukherji.com/wp-content/uploads/2023/08/client_bharat_hotel.png",
+              "https://bobbymukherji.com/wp-content/uploads/2024/04/wyndhamGrand-1.jpg",
+              "https://bobbymukherji.com/wp-content/uploads/2023/08/client_bharat_hotel.png",
+              "https://bobbymukherji.com/wp-content/uploads/2024/04/wyndhamGrand-1.jpg",
+            ].map((src) => (
+              <img key={src} src={src} className="w-40 h-40 object-contain" />
+            ))}
+          </div>
+        </Marquee>
       </section>
     </PageLayout>
   );
